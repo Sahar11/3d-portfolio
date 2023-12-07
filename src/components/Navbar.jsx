@@ -6,7 +6,6 @@ import { logo, menu, close} from '../assets';
 
 const Navbar = () => {
 
-  const [active, setActive] = useState("");
 
   return (
     <header className="header">
