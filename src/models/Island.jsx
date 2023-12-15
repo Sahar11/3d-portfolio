@@ -10,6 +10,8 @@ Title: Fox's islands
 
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame, useThree } from '@react-three/fiber';
+import IslandScene from '../assets/3d/island.glb';
 
 const Island =(props) =>{
   const { nodes, materials } = useGLTF("/island.glb");
