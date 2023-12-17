@@ -9,6 +9,7 @@ import  Island  from '../models/Island';
       </div> */}
 
 const Home = () => {
+  
   return (
     <section className="w-full h-screen relative">
      <Canvas className="w-full h-screen bg-transparent" camera={ {near: 0.1, far: 1000}}>
