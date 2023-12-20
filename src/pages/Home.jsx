@@ -11,7 +11,17 @@ import Island from '../models/island';
       </div> */}
 
 const Home = () => {
+ const adjustIslandForScreenSize = () => {
+  let screenScale = null
+  let screenPosition =[0, -6.5, -43];
 
+  if(window.innerWidth < 768) {
+    screenscale = [0.9, 0.9, 0.9];  
+  } else {
+    screenScale = [1, 1, 1];
+  }
+  }
+ 
   return (
     <section className="w-full h-screen relative">
      <Canvas className="w-full h-screen bg-transparent" camera={ {near: 0.1, far: 1000}}>
@@ -27,5 +37,6 @@ const Home = () => {
     </section>
   )
 }
+
 
 export default Home
